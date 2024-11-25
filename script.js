@@ -1,6 +1,7 @@
 function changeColors() {
+    const light_colors = ["btn-danger", "btn-warning", "btn-success"];
+
     let button = document.getElementById("lights");
-    const colors = ["btn-danger", "btn-warning", "btn-success"];
     
     let currentColor = colors.findIndex(colors => button.classList.contains(colors));
     button.classList.remove(colors[currentColor]);
