@@ -1,13 +1,13 @@
 function changeColors() {
-    const light_colors = ["btn-danger", "btn-warning", "btn-success"];
+    const lightColors = ["btn-danger", "btn-warning", "btn-success"];
 
     let button = document.getElementById("lights");
     
-    let currentColor = colors.findIndex(colors => button.classList.contains(colors));
-    button.classList.remove(colors[currentColor]);
+    let currentColor = lightColors.findIndex(colors => button.classList.contains(lightColors));
+    button.classList.remove(lightColors[currentColor]);
     
-    let nextColor = (currentColor + 1) % colors.length;
-    button.classList.add(colors[nextColor]);
+    let nextColor = (currentColor + 1) % lightColors.length;
+    button.classList.add(lightColors[nextColor]);
 }
 setInterval(changeColors, 10000);
 
