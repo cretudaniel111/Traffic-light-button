@@ -10,4 +10,6 @@ function changeColors() {
     button.classList.add(lightColors[nextColor]);
 }
 
-setInterval(changeColors, 10000);
+const MAX_SIZE = 10000;
+
+setInterval(changeColors, MAX_SIZE);
