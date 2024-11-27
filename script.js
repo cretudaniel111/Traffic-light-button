@@ -1,3 +1,5 @@
+const TEN_THOUSAND = 10000;
+
 function changeColors() {
     const lightColors = ["btn-danger", "btn-warning", "btn-success"];
 
@@ -10,6 +12,4 @@ function changeColors() {
     button.classList.add(lightColors[nextColor]);
 }
 
-const MAX_SIZE = 10000;
-
-setInterval(changeColors, MAX_SIZE);
+setInterval(changeColors, TEN_THOUSAND);
